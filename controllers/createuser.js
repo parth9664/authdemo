@@ -9,6 +9,8 @@ export const createUser = async (req, res) => {
       return res.status(403).json({ message: "user already exists" });
     }
 
+
+    
     const newUser = new User({
       name,
       password : "",
